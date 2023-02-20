@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  font-style: normal;
+  background-color: #e5e5e5;
+}
+
+.header-container {
+  background: url(./images/header-bg-img.svg) no-repeat;
+  background-size: 100% auto;
+  background-color: #fff;
+  border-radius: 0 0 0 50px;
+}
+
+nav {
+  padding: 26px 24px;
+}
+
+nav > img:last-child {
+  align-self: center;
+  width: 35px;
+  height: 25px;
+  cursor: pointer;
+}
+
+p {
+  color: #344563;
+  font-size: 15px;
+}
+
+#logo {
+  font-family: 'Pacifico', cursive;
+  word-spacing: 0;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-style: oblique;
+  color: #6070ff;
+}
+
+.contact-container > h1 {
+  text-align: center;
+  margin: 0;
+}
+
+.headline {
+  margin: 0 24px;
+  padding: 20% 0;
+}
+
+.headline .title > h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  color: #172b4d;
+}
+
+.headline > div > p {
+  font-size: 16px;
+  color: #344563;
+  line-height: 24px;
+  font-weight: 400px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 1rem;
+}
+
+.p-highlight {
+  list-style: none;
+  padding-inline-start: 0;
+  margin-top: 0;
+}
+
+.p-highlight li::before {
+  content: '\2022';
+  color: #bcc0c9;
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: inline-flex;
+  width: 1rem;
+  margin-left: -1rem;
+  margin-right: 0.3rem;
+  vertical-align: sub;
+}
+
+.p-highlight li:first-child::before {
+  color: transparent;
+  margin-right: 0;
+  text-transform: uppercase;
+}
+
+.p-highlight li {
+  font-size: 13px;
+  color: #7a869a;
+}
+
+.skill-set > ul > li > img {
+  max-width: 40px;
+  height: 25px;
+}
+
+.skill-set > ul > li > span {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.skill-set > ul {
+  height: 150px;
+  margin: 0 0 28px;
+}
+
+.skill-set > ul > li {
+  gap: 16px;
+  margin: 4px 0;
+  padding: 10px;
+  border-radius: 8px;
+  flex: 1;
+  background-color: #f7f7f9;
+}
+
+.p-highlight li:first-child {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #344563;
+}
+
+.list-tags > * {
+  background-color: #ebebff;
+  padding: 4px 12px;
+  list-style: none;
+  color: #6070ff;
+  font-size: 12px;
+  border-radius: 10px;
+}
+
+.connect {
+  color: #7f8cff;
+  margin-top: 10px;
+}
+
+.connect .social li {
+  list-style: none;
+}
+
+.social > li > a > img {
+  max-width: 20px;
+  height: 15px;
+}
+
+.connect .social {
+  gap: 10px;
+}
+
+.image-auto-h {
+  width: 100%;
+  height: auto;
+}
+
+.about-me {
+  background-color: #fff;
+  padding: 108px 24px;
+  flex-wrap: nowrap;
+  border-radius: 0 50px 0 0;
+}
+
+.about-me > div {
+  flex: 1;
+}
+
+.btn-action {
+  padding: 12px 16px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 17px;
+  color: #396df2;
+  border: 1px solid #396df2;
+  background-color: #fff;
+}
+
+.btn-action:hover {
+  color: #fff;
+  background: #6070ff;
+}
+
+.btn-action:active {
+  background-color: #2230d2;
+}
+
+.tech {
+  height: 28px;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: solid 1px #acb7c3;
+}
+
+.round-border-8 {
+  border-radius: 10px;
+}
+
+hr {
+  color: #dfe1e6;
+}
+
+.tech > button {
+  font-size: 15px;
+  color: #acb7c3;
+  border: none;
+  background-color: #fff;
+  margin-right: 56px;
+  cursor: pointer;
+}
+
+h6 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.about-contact {
+  background-color: #fff;
+}
+
+.contact-me {
+  background: url(./images/contact-bg.png);
+  background-size: 65% auto;
+  background-repeat: no-repeat;
+  background-color: #6070ff;
+  border-radius: 50px 0 0 0;
+  background-position: top 1% right 0%;
+}
+
+.contact-container {
+  padding: 70px 16px 45px;
+  color: #fff;
+}
+
+form input,
+textarea {
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 15px;
+  min-height: 20px;
+}
+
+.contact-btn {
+  margin-top: 10px;
+}
+
+#message {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#contact-me {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 375px) {
+  .title > h1 {
+    font-size: xx-large;
+  }
+
+  .header-container {
+    background-position: top 40% left 50%;
+  }
+}
+
+.no-pad {
+  padding-inline-start: 0;
+}
+
+/* flex */
+.d-flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.space-y-3 > * + * {
+  margin-top: 3rem;
+}
+
+.space-y-1 > * + * {
+  margin-top: 1rem;
+}
+
+.space-x-1 > * + * {
+  margin-left: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-32 {
+  font-size: 32px;
+}
+
+/* margin */
+.m0 {
+  margin: 0;
+}
+
+.m5 {
+  margin: 5%;
+}
+
+.m10 {
+  margin: 10%;
+}
+
+.m15 {
+  margin: 15%;
+}
+
+.m20 {
+  margin: 20%;
+}
+
+.m25 {
+  margin: 25%;
+}
+
+.mb-48 {
+  margin-bottom: 28px;
+}
+
+.font-13 {
+  font-size: 13px;
+}
+
+/* Margin left right */
+.mx-8 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.mx-12 {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.mx-18 {
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+.mx-24 {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.mx-28 {
+  margin-left: 28px;
+  margin-right: 28px;
+}
+
+/* Margin Top Bottom */
+.my-8 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.my-12 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.my-18 {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.my-24 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.my-28 {
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+.my-36 {
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+.my-40 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.my-52 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* padding */
+.p5 {
+  padding: 5%;
+}
+
+.p10 {
+  padding: 10%;
+}
+
+.p15 {
+  padding: 15%;
+}
+
+.p20 {
+  padding: 20%;
+}
+
+.p25 {
+  padding: 25%;
+}

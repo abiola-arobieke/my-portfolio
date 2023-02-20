@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./index.css">
+    
 </head>
-<body>
+<body class="m0">
     <!-- header section -->
     <div class="header-container">
         <header>
@@ -55,10 +57,9 @@
             </div>
         </section>
     </div>
-    <!-- end of header section -->
-
+    
     <!-- projects section -->
-    <div class="">
+    <div class="d-flex flex-column space-y-3 my-88 mx-24">
         <section>
             <div class="card d-flex flex-wrap">
                 <div>
@@ -87,7 +88,7 @@
             </div>
         </section>
         <section>
-            <div class="card d-flex flex-wrap">
+            <div class="card grid">
                 <div>
                     <img src="./images/project2.png" class="image-auto-h" alt="project">
                 </div>
@@ -114,7 +115,7 @@
             </div>
         </section>
         <section>
-            <div class="card d-flex flex-wrap">
+            <div class="card grid">
                 <div class="">
                     <img src="./images/project3.png" class="image-auto-h" alt="project">
                 </div>
@@ -141,7 +142,7 @@
             </div>
         </section>
         <section>
-            <div class="card d-flex flex-wrap">
+            <div class="card grid">
                 <div>
                     <img src="./images/project4.png" class="image-auto-h" alt="project">
                 </div>
@@ -168,8 +169,7 @@
             </div>
         </section>
     </div>
-    <!-- end of project section -->
-
+    
     <!-- about and contact section -->
     <div class="about-contact">
         <section class="about-me d-flex flex-column">
@@ -206,8 +206,10 @@
                 <button class="btn-action" type="button">Get my resume</button> 
             </div>
             <div class="skill-set">
-                <h4>Languages</h4>
-                
+                <div class="tech lang d-flex justify-between">
+                    <h4>Frameworks</h4>
+                    <button type="button"> v </button>
+                </div>    
                 <ul class="d-flex flex-column no-pad">
                     <li class="d-flex">
                         <img src="./images/js-logo.png" alt="js-logo">
@@ -242,7 +244,7 @@
             </div> 
         </section>
 
-        <!-- about and contact section -->
+        <!-- contact section -->
         <section class="contact-me contact-container d-flex flex-column ">
             <div class="text-center mb-48">
                 <h1 id="contact-me">Contact me</h1>
@@ -264,6 +266,5 @@
             </form>
         </section>
     </div>
-     <!-- end of about and contact section -->
 </body>
 </html>

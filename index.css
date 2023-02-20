@@ -8,6 +8,10 @@ body {
   background-color: #e5e5e5;
 }
 
+.container {
+  margin: 24px 0;
+}
+
 .header-container {
   background: url(./images/header-bg-img.svg) no-repeat;
   background-size: 100% auto;
@@ -65,10 +69,16 @@ p {
   font-weight: 400px;
 }
 
+.grid{
+  display: grid;
+  /* grid-template-columns: auto auto; */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .card {
   background-color: #fff;
-  padding: 16px;
-  border-radius: 1rem;
+  padding: 16px 16px 40px;
+  border-radius: 16px;
 }
 
 .p-highlight {
@@ -174,6 +184,10 @@ p {
   flex: 1;
 }
 
+.personal h1 {
+  font-size: 40px;
+}
+
 .btn-action {
   padding: 12px 16px;
   border-radius: 8px;
@@ -200,6 +214,11 @@ p {
   border-bottom: solid 1px #acb7c3;
 }
 
+.lang {
+    border-bottom: none;
+    padding: 45px 0  30px 0;
+}
+
 .round-border-8 {
   border-radius: 10px;
 }
@@ -223,6 +242,7 @@ h6 {
 }
 
 .about-contact {
+  margin-top: 28px;
   background-color: #fff;
 }
 
@@ -272,6 +292,11 @@ textarea {
   .header-container {
     background-position: top 40% left 50%;
   }
+
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 }
 
 .no-pad {
@@ -304,7 +329,7 @@ textarea {
 }
 
 .space-y-3 > * + * {
-  margin-top: 3rem;
+  margin-top: 88px;
 }
 
 .space-y-1 > * + * {
@@ -413,9 +438,9 @@ textarea {
   margin-bottom: 36px;
 }
 
-.my-40 {
-  margin-top: 40px;
-  margin-bottom: 40px;
+.my-88 {
+  margin-top: 88px;
+  margin-bottom: 88px;
 }
 
 .my-52 {

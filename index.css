@@ -50,7 +50,7 @@ p {
   margin: 0;
 }
 
-.personal h1 {
+.personal h3 {
   font-size: 40px;
 }
 
@@ -114,8 +114,8 @@ p {
 }
 
 .skill-set > ul > li > img {
-  max-width: 40px;
-  height: 25px;
+  width: 48px;
+  height: 48px;
 }
 
 .skill-set > ul > li > span {
@@ -125,16 +125,18 @@ p {
 }
 
 .skill-set > ul {
-  height: 150px;
+  height: 248px;
   margin: 0 0 28px;
+  padding: 12px;
 }
 
 .skill-set > ul > li {
   gap: 16px;
-  margin: 4px 0;
-  padding: 10px;
+  margin: 6px 0;
+  padding: 9px 12px;
   border-radius: 8px;
   flex: 1;
+  color: #253858;
   background-color: #f7f7f9;
 }
 
@@ -160,11 +162,12 @@ p {
 
 .connect .social li {
   list-style: none;
+  cursor: pointer;
 }
 
 .social > li > a > img {
   max-width: 20px;
-  height: 15px;
+  height: 19px;
 }
 
 .connect .social {
@@ -208,14 +211,20 @@ p {
 
 .tech {
   height: 28px;
-  align-items: center;
-  padding: 10px 0;
+  padding: 20px 0;
+  margin-left: 12px;
   border-bottom: solid 1px #acb7c3;
 }
 
 .lang {
   border-bottom: none;
-  padding: 45px 0 30px 0;
+  margin-top: 35px;
+  margin-bottom: 12px;
+}
+
+.tech h4 {
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .round-border-8 {
@@ -227,11 +236,11 @@ hr {
 }
 
 .tech > button {
-  font-size: 15px;
   color: #acb7c3;
   border: none;
   background-color: #fff;
-  margin-right: 56px;
+  padding: 0;
+  margin-right: 42px;
   cursor: pointer;
 }
 
@@ -313,6 +322,14 @@ textarea {
 
 .justify-start {
   justify-content: flex-start;
+}
+
+.align-center {
+  align-content: center;
+}
+
+.align-item-center {
+  align-items: center;
 }
 
 .flex-nowrap {
@@ -466,4 +483,10 @@ textarea {
 
 .p25 {
   padding: 25%;
+}
+
+.foward,
+.downward {
+  font-size: 23px;
+  color: #acb7c3;
 }

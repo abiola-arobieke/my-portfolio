@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./index.css">
+    
     
 </head>
 <body class="m0">
     <!-- header section -->
-    <div class="header-container">
+    <section class="header-container">
         <header>
             <nav class="d-flex justify-between flex-nowrap">
                 <a id="logo" href="#">ArB</a>
@@ -56,18 +58,18 @@
                 </ul>
             </div>
         </section>
-    </div>
+    </section>
     <!-- end of header sections -->
     
     <!-- projects section -->
-    <div class="d-flex flex-column space-y-3 my-88 mx-24">
+    <section class="d-flex flex-column space-y-3 my-88 mx-24">
         <section>
             <div class="card d-flex flex-wrap">
                 <div>
                     <img src="./images/project1.png" class="image-auto-h" alt="project">
                 </div>
                 <div>
-                    <h1 class="m0 font-32">Tonic</h1>
+                    <h2 class="m0 font-32">Tonic</h2>
                     <ul class="d-flex space-x-1 p-highlight">
                         <li class="font-13">Facebook</li>
                         <li>Full Stack</li>
@@ -94,7 +96,7 @@
                     <img src="./images/project2.png" class="image-auto-h" alt="project">
                 </div>
                 <div>
-                    <h1 class="m0 font-32">Multi-Post Stories</h1>
+                    <h2 class="m0 font-32">Multi-Post Stories</h2>
                     <ul class="d-flex space-x-1 p-highlight">
                         <li class="font-13">Facebook</li>
                         <li>Full Stack</li>
@@ -121,7 +123,7 @@
                     <img src="./images/project3.png" class="image-auto-h" alt="project">
                 </div>
                 <div>
-                    <h1 class="m0 font-32">Multi-Post Stories</h1>
+                    <h2 class="m0 font-32">Multi-Post Stories</h2>
                     <ul class="d-flex space-x-1 p-highlight">
                         <li class="font-13">Facebook</li>
                         <li>Full Stack</li>
@@ -148,7 +150,7 @@
                     <img src="./images/project4.png" class="image-auto-h" alt="project">
                 </div>
                 <div>
-                    <h1 class="m0 font-32">Multi-Post Stories</h1>
+                    <h2 class="m0 font-32">Multi-Post Stories</h2>
                     <ul class="d-flex space-x-1 p-highlight">
                         <li class="font-13">Facebook</li>
                         <li>Full Stack</li>
@@ -169,14 +171,14 @@
                 </div>
             </div>
         </section>
-    </div>
+    </section>
     <!-- end of projects section -->
     
     <!-- about and contact section -->
-    <div class="about-contact">
+    <section class="about-contact">
         <section class="about-me d-flex flex-column">
             <div class="personal">
-                <h1>About <br>Abiola</h1>
+                <h3>About <br>Abiola</h3>
                 <p>
                     Hello I’m a software developer! I can help 
                     you build a product , feature or 
@@ -208,48 +210,49 @@
                 <button class="btn-action" type="button">Get my resume</button> 
             </div>
             <div class="skill-set">
-                <div class="tech lang d-flex justify-between">
-                    <h4>Frameworks</h4>
-                    <button type="button"> v </button>
+                <div class="tech lang d-flex justify-between align-item-center">
+                    <h4>Languages</h4>
+                    <button type="button">
+                        <i class="fa fa-angle-down downward" aria-hidden="true"></i>
+                    </button>
                 </div>    
-                <ul class="d-flex flex-column no-pad">
-                    <li class="d-flex">
+                <ul class="d-flex flex-column no-pad ">
+                    <li class="d-flex align-item-center">
                         <img src="./images/js-logo.png" alt="js-logo">
                         <span>javascript</span>
                     </li>
-                    <li class="d-flex">
+                    <li class="d-flex align-item-center">
                         <img src="./images/html-logo.png" alt="html-logo"> 
                         <span>HTML</span>
                     </li>
-                    <li class="d-flex">
+                    <li class="d-flex align-item-center">
                         <img src="./images/css-logo.png" alt="css-logo">
                         <span>CSS</span>
                     </li>
                 </ul>
-                <div>
-
-                    <div>
-                        <div class="tech d-flex justify-between">
-                            <h4>Frameworks</h4>
-                            <button type="button"> > </button>
-                        </div>
+                <div>       
+                    <div class="tech d-flex justify-between align-item-center">
+                        <h4>Frameworks</h4>
+                        <button type="button">
+                            <i class="fa fa-angle-right foward" aria-hidden="true"></i>
+                        </button>
                     </div>
-
-                    <div>
-                        <div class="tech d-flex justify-between">
-                            <h4>Skills</h4>
-                            <button type="button"> > </button>
-                        </div>
+                
+                
+                    <div class="tech d-flex justify-between  align-item-center">
+                        <h4>Skills</h4>
+                        <button type="button">
+                            <i class="fa fa-angle-right foward" aria-hidden="true"></i>
+                        </button>
                     </div>
-
                 </div>   
             </div> 
         </section>
 
         <!-- contact section -->
-        <section class="contact-me contact-container d-flex flex-column ">
+        <footer class="contact-me contact-container d-flex flex-column ">
             <div class="text-center mb-48">
-                <h1 id="contact-me">Contact me</h1>
+                <h5 id="contact-me">Contact me</h5>
                 <p id="message">
                     If you have an application 
                     you are interested in developing, 
@@ -266,8 +269,8 @@
                 </div>
                 <button class="contact-btn btn-action" type="submit">Get in touch</button>
             </form>
-        </section>
-    </div>
+        </footer>
+    </section>
     <!-- end of about and contact -->
 </body>
 </html>

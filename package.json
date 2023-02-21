@@ -3,27 +3,6 @@
   "version": "1.0.0",
   "description": "<a name=\"readme-top\"></a>",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/abiola-arobieke/my-portfolio.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/abiola-arobieke/my-portfolio/issues"
-  },
-  "homepage": "https://github.com/abiola-arobieke/my-portfolio#readme",
-  "devDependencies": {
-    "hint": "^7.1.3",
-    "stylelint": "^13.13.1",
-    "stylelint-config-standard": "^21.0.0",
-    "stylelint-csstree-validator": "^1.9.0",
-    "stylelint-scss": "^3.21.0"
-  },
   "dependencies": {
     "abab": "^2.0.6",
     "abbrev": "^1.1.1",
@@ -202,6 +181,7 @@
     "has-flag": "^4.0.0",
     "has-unicode": "^2.0.1",
     "has-yarn": "^2.1.0",
+    "hint": "^7.1.3",
     "hosted-git-info": "^5.2.1",
     "html-encoding-sniffer": "^3.0.0",
     "html-tags": "^3.2.0",
@@ -535,5 +515,25 @@
     "yargs-parser": "^20.2.9",
     "yauzl": "^2.10.0",
     "zwitch": "^1.0.5"
-  }
+  },
+  "devDependencies": {
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abiola-arobieke/my-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abiola-arobieke/my-portfolio/issues"
+  },
+  "homepage": "https://github.com/abiola-arobieke/my-portfolio#readme"
 }

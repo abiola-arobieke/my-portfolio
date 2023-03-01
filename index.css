@@ -12,6 +12,7 @@ body {
   margin: 24px 0;
 }
 
+
 .header-container {
   background: url(./images/header-bg-img.svg) no-repeat;
   background-size: 100% auto;
@@ -256,7 +257,7 @@ h6 {
 
 .contact-me {
   background: url(./images/contact-bg.png);
-  background-size: 65% auto;
+  background-size: 70% auto;
   background-repeat: no-repeat;
   background-color: #6070ff;
   border-radius: 50px 0 0 0;
@@ -264,7 +265,7 @@ h6 {
 }
 
 .contact-container {
-  padding: 70px 16px 45px;
+  padding: 60px 16px 45px;
   color: #fff;
 }
 

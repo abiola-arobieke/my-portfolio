@@ -83,7 +83,6 @@ Change directory to the project folder
   cd Portfolio
 ```
 
-
 ## 👥 Author <a name="authors"></a>
 
 👤 **Abiola Arobieke**
@@ -96,8 +95,9 @@ Change directory to the project folder
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Projects Section**
-- [ ] **Contact Section**
+- [ ] **Hambuger transition**
+- [ ] **Button transition on hover**
+- [ ] **Animation on header text**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

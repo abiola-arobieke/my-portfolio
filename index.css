@@ -220,7 +220,7 @@ nav > div > img:last-child {
 }
 
 .connect .social {
-  gap: 10px;
+  gap: 21px;
 }
 
 .connect #title {
@@ -284,6 +284,7 @@ nav > div > img:last-child {
 .tech h4 {
   font-size: 20px;
   font-weight: 500;
+  color: #344563;
 }
 
 .round-border-8 {
@@ -340,7 +341,7 @@ textarea {
 }
 
 .contact-btn {
-  margin-top: 10px;
+  margin-top: 27px;
 }
 
 #message {
@@ -405,7 +406,7 @@ textarea {
 }
 
 .space-x-1 > * + * {
-  margin-left: 1.5rem;
+  margin-left: 8px;
 }
 
 .text-center {
@@ -461,6 +462,14 @@ textarea {
 
 .font-13 {
   font-size: 18px;
+}
+
+.h-0 {
+  margin-block-start: 0;
+}
+
+.f-color {
+  color: #091e42;
 }
 
 /* Margin left right */
@@ -529,8 +538,8 @@ textarea {
   margin-bottom: 32px;
 }
 
-.mt-58 {
-  margin-top: 58px;
+.mt-40 {
+  margin-top: 40px;
 }
 
 /* padding */
@@ -578,7 +587,7 @@ textarea {
 
 /* media query */
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 768px) {
   .header-container {
     background: url(./images/header-bg-img.svg) no-repeat;
     background-position: top 70px right 5%;
@@ -662,7 +671,7 @@ textarea {
     margin-bottom: 0;
   }
 
-  .mt-58 {
+  .mt-40 {
     margin-top: 0;
   }
 
@@ -735,5 +744,9 @@ textarea {
 
   .btn-wrappper {
     text-align: left;
+  }
+
+  .contact-btn {
+    margin-top: 20px;
   }
 }

@@ -221,6 +221,12 @@ nav > div > img:last-child {
 .image-auto-h {
   width: 100%;
   height: auto;
+  transition-property: width;
+  transition-duration: 1s;
+}
+
+.image-auto-h:hover {
+  width: 103%;
 }
 
 .about-me {
@@ -240,6 +246,9 @@ nav > div > img:last-child {
   letter-spacing: 0.03em;
   border: 1px solid #396df2;
   background-color: #fff;
+  transition-property: color, background-color;
+  transition-duration: 2s, 0.5s;
+  transition-delay: 1s;
 }
 
 .btn-action:hover {

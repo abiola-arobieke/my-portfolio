@@ -123,7 +123,6 @@ nav > div > img:last-child {
 
 .p-highlight li::before {
   content: '\2022';
-  /* color: #bcc0c9; */
   color: #5e6776;
   font-weight: bold;
   font-size: 1.5rem;
@@ -142,7 +141,6 @@ nav > div > img:last-child {
 
 .p-highlight li {
   font-size: 13px;
-  /* color: #7a869a; */
   color: #5e6776;
 }
 
@@ -196,7 +194,7 @@ nav > div > img:last-child {
 }
 
 .connect {
-  color: #6070ff;
+  color: #4050ff;
   margin-top: 10px;
   animation-name: moveup;
   animation-duration: 3s;
@@ -364,7 +362,7 @@ textarea {
 #message {
   color: #fff;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 #contact-me {

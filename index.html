@@ -75,7 +75,7 @@
         <section>
             <div class="card grid">
                 <div>
-                    <img src="./images/project1.png" class="image-auto-h" alt="project">
+                    <img src="./images/project1.png" class="image-auto-h" alt="Tonic">
                 </div>
                 <div class="change-row">
                     <h2 class="m0 font-40 h-0 f-color">Tonic</h2>
@@ -102,7 +102,7 @@
         <section>
             <div class="card grid">
                 <div>
-                    <img src="./images/project2.png" class="image-auto-h" alt="project">
+                    <img src="./images/project2.png" class="image-auto-h" alt="Multi-Post Stories">
                 </div>
                 <div>
                     <h2 class="m0 font-40 h-0 f-color">Multi-Post Stories</h2>
@@ -129,10 +129,10 @@
         <section>
             <div class="card grid">
                 <div class="">
-                    <img src="./images/project3.png" class="image-auto-h" alt="project">
+                    <img src="./images/project3.png" class="image-auto-h" alt="Coffee Shop">
                 </div>
                 <div>
-                    <h2 class="m0 font-40 h-0 f-color">Multi-Post Stories</h2>
+                    <h2 class="m0 font-40 h-0 f-color">Coffee Shop</h2>
                     <ul class="d-flex space-x-24 p-highlight mb-32">
                         <li class="font-13">Facebook</li>
                         <li>Full Stack</li>
@@ -156,10 +156,10 @@
         <section>
             <div class="card grid">
                 <div>
-                    <img src="./images/project4.png" class="image-auto-h" alt="project">
+                    <img src="./images/project4.png" class="image-auto-h" alt="Tax Calculator">
                 </div>
                 <div>
-                    <h2 class="m0 font-40  h-0 f-color">Multi-Post Stories</h2>
+                    <h2 class="m0 font-40  h-0 f-color">Tax Calculator</h2>
                     <ul class="d-flex space-x-24 p-highlight mb-32">
                         <li class="font-13">Facebook</li>
                         <li>Full Stack</li>
@@ -274,9 +274,17 @@
                 </div>
                 <form action="https://formspree.io/f/mpzerqgg" method="POST">
                     <div class="d-flex flex-column">
-                        <label><input class="font-17" id="user" name="user_name" type="text" placeholder="Lionel Messi" maxlength="30" required></label>
-                        <label><input class="font-17" id="mail" name="email "type="email" placeholder="dev@worker.com" required></label>
-                        <label><textarea class="font-17" id="msg" name="message" cols="10" rows="8" placeholder="Write your message here" maxlength="500" required></textarea></label>
+                        <label for="user" class="d-flex flex-column"> 
+                            <input class="font-17" id="user" name="user_name" type="text" placeholder="Lionel Messi" maxlength="30" required>
+                        </label>
+                       
+                        <label for="mail" class="d-flex flex-column">
+                            <input class="font-17" id="mail" name="email "type="email" placeholder="dev@worker.com" required>
+                        </label>
+                        
+                        <label for="msg" class="d-flex flex-column">
+                            <textarea class="font-17" id="msg" name="message" cols="10" rows="8" placeholder="Write your message here" maxlength="500" required></textarea>
+                        </label>
                     </div>
                     <div class="btn-wrappper">
                          <button class="contact-btn btn-action" type="submit">Get in touch</button>

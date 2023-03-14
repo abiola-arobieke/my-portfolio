@@ -24,11 +24,31 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
               </ul>
-              <img
-                class="align-self-center"
-                src="./images/menu-icon.png"
-                alt="menu"
-              />
+              <button id="menu-btn" class="faded" type="button">
+                <img
+                    class="align-self-center menu-img"
+                    src="./images/menu-icon.png"
+                    alt="menu"
+                />
+             </button>
+              <span id="overlay" class="overlay">
+                <div class="d-flex close-menu">
+                    <button id="close-btn" class="faded-bg-blue" type="button">
+                        <img
+                            class="align-self-center menu-img"
+                            src="./images/cancel.svg"
+                            alt="close"
+                        />
+                    </button> 
+                </div>
+                <div>
+                    <ul class="list-style-n d-flex box nav-menu">
+                        <li><a class="text-white nav-item" href="#portfolio">Portfolio</a></li>
+                        <li><a class="text-white nav-item" href="#about">About</a></li>
+                        <li><a class="text-white nav-item" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+              </span>    
             </div>
           </nav>
         </div>
@@ -41,7 +61,7 @@
           </h1>
         </div>
         <div>
-          <p>
+          <p class="info">
             I'm a full-stack developer! I can help you build an interactive and
             fully responsive website. My designs are top notches. A typical
             design of my website is the one you are viewing right now. Connect
@@ -214,7 +234,7 @@
             Hello I’m a software developer! I can help you build a product ,
             feature or website Look through some of my work and experience! If
             you like what you see and have a project you need coded, don’t
-            hestiate to contact me.
+            hesitate to contact me.
           </p>
           <div class="connect">
             <div id="title">LET’S CONNECT</div>
@@ -276,13 +296,13 @@
             <div class="tech d-flex justify-between align-item-center">
               <h4>Frameworks</h4>
               <button type="button">
-                <i class="fa fa-angle-right foward" aria-hidden="true"></i>
+                <i class="fa fa-angle-right forward" aria-hidden="true"></i>54
               </button>
             </div>
             <div class="tech d-flex justify-between align-item-center">
               <h4>Skills</h4>
               <button type="button">
-                <i class="fa fa-angle-right foward" aria-hidden="true"></i>
+                <i class="fa fa-angle-right forward" aria-hidden="true"></i>
               </button>
             </div>
           </div>
@@ -351,4 +371,14 @@
     </section>
     <!-- end of about and contact -->
   </body>
+  <script src="./index.js" async="true"></script>
+  <script>
+    // function on() {
+    //   document.getElementById("overlay").style.display = "block";
+    // }
+    
+    // function off() {
+    //   document.getElementById("overlay").style.display = "none";
+    // }
+    </script>
 </html>

@@ -8,6 +8,25 @@ body {
   background-color: #e5e5e5;
 }
 
+.overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #6070ff;
+  z-index: 2;
+  opacity: 0.98;
+  cursor: pointer;
+}
+
+.text-white {
+  color: #fff;
+}
+
 .nav-wrapper {
   position: fixed;
   width: 100%;
@@ -22,11 +41,26 @@ a {
   text-decoration: none;
 }
 
-nav > div > img:last-child {
+.menu-img {
   display: inline;
-  width: 35px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
+}
+
+.faded {
+  border: none;
+  background-color: #fff;
+}
+
+.faded-bg-blue {
+  border: none;
+  background-color: #6070ff;
+}
+
+.close-menu {
+  padding: 26px 24px;
+  justify-content: end;
 }
 
 .navigation {
@@ -94,7 +128,7 @@ nav > div > img:last-child {
 .headline > div > p {
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400px;
+  font-weight: 400;
   color: #344563;
 }
 
@@ -123,7 +157,7 @@ nav > div > img:last-child {
 
 .p-highlight li::before {
   content: '\2022';
-  color: #bcc0c9;
+  color: #5e6776;
   font-weight: bold;
   font-size: 1.5rem;
   display: inline-flex;
@@ -141,7 +175,7 @@ nav > div > img:last-child {
 
 .p-highlight li {
   font-size: 13px;
-  color: #7a869a;
+  color: #5e6776;
 }
 
 .skill-set {
@@ -188,13 +222,13 @@ nav > div > img:last-child {
 .list-tags > * {
   background-color: #ebebff;
   padding: 4px 12px;
-  color: #6070ff;
+  color: #4050ff;
   font-size: 12px;
   border-radius: 10px;
 }
 
 .connect {
-  color: #7f8cff;
+  color: #4050ff;
   margin-top: 10px;
 }
 
@@ -221,6 +255,12 @@ nav > div > img:last-child {
 .image-auto-h {
   width: 100%;
   height: auto;
+  transition-property: width;
+  transition-duration: 1s;
+}
+
+.image-auto-h:hover {
+  width: 103%;
 }
 
 .about-me {
@@ -240,6 +280,8 @@ nav > div > img:last-child {
   letter-spacing: 0.03em;
   border: 1px solid #396df2;
   background-color: #fff;
+  transition-property: color, background-color;
+  transition-duration: 1s, 0.5s;
 }
 
 .btn-action:hover {
@@ -276,10 +318,6 @@ nav > div > img:last-child {
 
 .round-border-8 {
   border-radius: 10px;
-}
-
-hr {
-  color: #dfe1e6;
 }
 
 .tech > button {
@@ -320,7 +358,11 @@ form {
   padding: 0;
 }
 
-form input,
+label {
+  display: none;
+}
+
+input,
 textarea {
   border: 1px solid #cfd8dc;
   margin-bottom: 20px;
@@ -336,7 +378,7 @@ textarea {
 #message {
   color: #fff;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 #contact-me {
@@ -360,6 +402,10 @@ textarea {
 
 .justify-start {
   justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: center;
 }
 
 .align-center {
@@ -406,14 +452,24 @@ textarea {
   text-align: center;
 }
 
-.btn-wrappper {
+.btn-wrapper {
   text-align: left;
 }
 
 .font-40 {
   font-size: 32px;
   font-weight: 700;
-  margin-bottom: none;
+  margin-bottom: 0;
+}
+
+.nav-menu {
+  font-size: 32px;
+  line-height: 44px;
+  padding-left: 28px;
+  margin: 0;
+  gap: 32px;
+  color: #fff;
+  font-weight: 600;
 }
 
 .font-17 {
@@ -564,7 +620,7 @@ textarea {
   width: auto;
 }
 
-.foward,
+.forward,
 .downward {
   font-size: 23px;
   color: #acb7c3;
@@ -607,7 +663,7 @@ textarea {
     padding: 26px 8%;
   }
 
-  nav > div > img:last-child {
+  .menu-img {
     display: none;
   }
 
@@ -643,9 +699,40 @@ textarea {
     margin: 0 17%;
   }
 
-  .headline > div > p {
+  .info {
     font-size: 20px;
     line-height: 28px;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  .connect {
+    animation-name: moveup;
+    animation-duration: 3s;
+  }
+
+  @keyframes moveup {
+    from {
+      margin-top: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-bottom: 0%;
+      width: 100%;
+    }
   }
 
   .grid {
@@ -712,7 +799,7 @@ textarea {
     flex-direction: row;
   }
 
-  form input,
+  input,
   textarea {
     border-radius: 0;
   }
@@ -734,7 +821,7 @@ textarea {
     margin-top: 27px;
   }
 
-  .btn-wrappper {
+  .btn-wrapper {
     text-align: center;
   }
 
@@ -773,6 +860,7 @@ textarea {
 
   .p-highlight li:first-child {
     font-weight: 500;
+    text-transform: capitalize;
   }
 
   .about-contact {

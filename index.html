@@ -293,7 +293,7 @@
               </p>
             </div>
           </div>
-          <form action="https://formspree.io/f/mpzerqgg" method="POST">
+          <form id="form" action="https://formspree.io/f/mpzerqgg" method="POST">
             <div class="d-flex flex-column">
               <label for="user" class="">Name: </label>
               <input
@@ -328,10 +328,13 @@
                 required
               ></textarea>
             </div>
-            <div class="btn-wrappper">
-              <button class="contact-btn btn-action" type="submit">
+            <div class="btn-wrapper d-flex gap-10">
+              <button id="submit-form" class="contact-btn btn-action" type="submit">
                 Get in touch
               </button>
+              <div class="alert-info">
+                <div>email address should be in lower case</div>
+              </div>
             </div>
           </form>
         </div>

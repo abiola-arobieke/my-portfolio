@@ -62,6 +62,10 @@ const description = document.querySelector('#description');
 const pills = document.querySelector('.labels');
 const imageUrl = document.querySelector('.modal-img');
 const portfolio = document.querySelector('#portfolio');
+const email = document.querySelector('#mail');
+const alertMsg = document.querySelector('.alert-info');
+const form = document.querySelector('#form');
+const page = document.getElementsByTagName('body')[0];
 
 // Event listener
 
@@ -164,3 +168,17 @@ for (let i = 0; i < actionBtn.length; i += 1) {
     modal.style.display = 'block';
   });
 }
+
+// Email validation
+
+form.addEventListener('submit', (event) => {
+  if (email.value !== email.value.toLowerCase()) {
+    alertMsg.style.display = 'block';
+    event.preventDefault();
+  }
+});
+
+// Remove alert
+page.addEventListener('click', () => {
+  alertMsg.style.display = 'none';
+});

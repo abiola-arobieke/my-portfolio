@@ -113,7 +113,7 @@ on your web browser.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add validation to the contact form**
+- [ ] **Preserve data in the browser**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

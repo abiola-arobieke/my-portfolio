@@ -6,7 +6,7 @@ const projects = [
     title: 'Tonic',
     data: ['Canopy', 'Dev-Ops', 2015],
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     stack: ['html', 'css', 'Javascript', 'ruby'],
     imageUrl: './images/project1.png',
   },
@@ -15,7 +15,7 @@ const projects = [
     title: 'Multi-Post Stories',
     data: ['Facebook', 'Back-End', 2017],
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     stack: ['html', 'css', 'Javascript', 'React'],
     imageUrl: './images/project2.png',
   },
@@ -42,7 +42,7 @@ const projects = [
     title: 'Tax Calculator',
     data: ['Walmart', 'DevOps', 2010],
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
     stack: ['html', 'css', 'Javascript'],
     imageUrl: './images/project1.png',
   },
@@ -134,9 +134,8 @@ for (let i = 0; i < projects.length; i += 1) {
   }
 }
 
-
 const actionBtn = document.querySelectorAll('.view-details');
-for (let i=0; i< actionBtn.length; i +=1) { 
+for (let i = 0; i < actionBtn.length; i += 1) {
   actionBtn[i].addEventListener('click', () => {
     while (projectInfo.hasChildNodes()) {
       projectInfo.removeChild(projectInfo.firstChild);
@@ -144,9 +143,9 @@ for (let i=0; i< actionBtn.length; i +=1) {
     while (pills.hasChildNodes()) {
       pills.removeChild(pills.firstChild);
     }
-    for (let j = 0; j <projects.length; j += 1) {
+    for (let j = 0; j < projects.length; j += 1) {
       const projectData = projects[i].data;
-      for (let k = 0; k < projectData.length; k +=1) {
+      for (let k = 0; k < projectData.length; k += 1) {
         const listTag = document.createElement('li');
         listTag.innerHTML = projectData[k];
         projectInfo.appendChild(listTag);

@@ -56,6 +56,12 @@ const overlay = document.querySelector('#overlay');
 const menuItems = document.getElementsByClassName('nav-item');
 const modal = document.querySelector('.modal-overlay');
 const closeModalBtn = document.querySelector('#close-modal');
+const modalTitle = document.getElementById('modal-title');
+const projectInfo = document.querySelector('#project-data');
+const description = document.querySelector('#description');
+const pills = document.querySelector('.labels');
+const imageUrl = document.querySelector('.modal-img');
+const portfolio = document.querySelector('#portfolio');
 
 // Event listener
 
@@ -126,4 +132,36 @@ for (let i = 0; i < projects.length; i += 1) {
     }
     break;
   }
+}
+
+
+const actionBtn = document.querySelectorAll('.view-details');
+for (let i=0; i< actionBtn.length; i +=1) { 
+  actionBtn[i].addEventListener('click', () => {
+    while (projectInfo.hasChildNodes()) {
+      projectInfo.removeChild(projectInfo.firstChild);
+    }
+    while (pills.hasChildNodes()) {
+      pills.removeChild(pills.firstChild);
+    }
+    for (let j = 0; j <projects.length; j += 1) {
+      const projectData = projects[i].data;
+      for (let k = 0; k < projectData.length; k +=1) {
+        const listTag = document.createElement('li');
+        listTag.innerHTML = projectData[k];
+        projectInfo.appendChild(listTag);
+      }
+      const projectStack = projects[i].stack;
+      for (let l = 0; l < projectStack.length; l += 1) {
+        const listTag = document.createElement('li');
+        listTag.innerHTML = projectStack[l];
+        pills.appendChild(listTag);
+      }
+      modalTitle.textContent = projects[i].title;
+      description.textContent = projects[i].description;
+      imageUrl.src = projects[i].imageUrl;
+      break;
+    }
+    modal.style.display = 'block';
+  });
 }

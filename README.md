@@ -37,12 +37,13 @@
   <ul>
     <li>HTML</li>
     <li>CSS</li>
+    <li>Javascript</>
   </ul>
 </details>
 
 ### Key Features <a name="key-features"></a>
 
-- **Portfolio header section for mobile screen**
+- **Pop Up Window**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -76,28 +77,43 @@ Using the commands below:
 ```sh
   git clone https://github.com/abiola-arobieke/my-portfolio.git
 ```
+Open the project on your code editor
 
 Change directory to the project folder
 
 ```sh
-  cd Portfolio
+  cd my-portfolio
 ```
+Right click on index.html file and select "open with live server" to view 
+on your web browser.
 
 ## 👥 Author <a name="authors"></a>
 
 👤 **Abiola Arobieke**
 
+
 - GitHub: [@abiola-arobieke](https://github.com/abiola-arobieke)
 - Linkedin: [abiola-arobieke](https://linkedin.com/in/abiola-arobieke)
 - Twitter: [@abiola_arobieke](https://twitter.com/abiola_arobieke)
+
+
+👤 **Junior Rodriquez**
+
+
+- GitHub: [@JuniorGarciaRodriguez](https://github.com/JuniorGarciaRodriguez)
+
+
+👤 **Naan Mohammed**
+
+
+- GitHub: [@naanmohammed](https://github.com/naanmohammed)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Hambuger transition**
-- [ ] **Button transition on hover**
-- [ ] **Animation on header text**
+- [ ] **Add validation to the contact form**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

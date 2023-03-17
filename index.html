@@ -12,8 +12,81 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body class="m0">
-    
-  <!-- header section -->
+    <!-- pop up modal -->
+    <div class="modal-overlay">
+      <div id="modal" class="modal">
+        <div>
+          <div class="d-flex justify-between no-wrap">
+            <h2
+              id="modal-title"
+              class="m0 font-40 h-0 f-color align-self-center"
+            ></h2>
+            <button
+              id="close-modal"
+              type="button"
+              class="align-self-center text-light-grey btn-close-modal"
+            >
+              <img
+                class="icon-close"
+                src="./images/icon-cancel.png"
+                alt="close"
+              />
+            </button>
+          </div>
+          <ul id="project-data" class="d-flex space-x-24 p-highlight mb-32">
+            <li class="font-13"></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="d-flex modal-img-wrap">
+          <img class="modal-img" src="#" alt="Project image" />
+        </div>
+        <div class="d-flex pt-59 flex-column-sm">
+          <div class="modal-description">
+            <p id="description" class="text-dark-grey font-16 font-15-sm"></p>
+          </div>
+          <div class="modal-labels">
+            <ul
+              class="d-flex flex-wrap space-right space-bottom list-tags 
+              list-style-n no-pad labels"
+            >
+              <li>html</li>
+              <li>css</li>
+              <li>javascript</li>
+              <li>github</li>
+              <li>ruby</li>
+              <li>bootstrap</li>
+            </ul>
+            <hr>
+            <div class="d-flex gap-10 mt-20 flex-nowrap">
+              <span class="flex-grw-bas-sh">
+                <a class="pill-modal d-flex justify-center" href="#"
+                  >See live
+                  <img
+                    class="align-self-center pill-icon"
+                    src="./images/live-view.png"
+                    alt="live-view"
+                  />
+                </a>
+              </span>
+              <span class="flex-grw-bas-sh">
+                <a class="pill-modal d-flex justify-center" href="#"
+                  >Sources
+                  <img
+                    class="align-self-center pill-icon" 
+                    src="./images/icon-gitHub.png"
+                    alt="github"
+                  />
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- header section -->
     <section class="header-container">
       <header>
         <div class="nav-wrapper">
@@ -114,123 +187,9 @@
     <!-- end of header sections -->
 
     <!-- projects section -->
-    <section id="portfolio" class="d-flex flex-column space-y-3 my-88 mx-24">
-      <section>
-        <div class="card grid">
-          <div>
-            <img src="./images/project1.png" class="image-auto-h" alt="Tonic" />
-          </div>
-          <div class="change-row">
-            <h2 class="m0 font-40 h-0 f-color">Tonic</h2>
-            <ul class="d-flex space-x-24 p-highlight mb-32">
-              <li class="font-13">Facebook</li>
-              <li>Full Stack</li>
-              <li>2015</li>
-            </ul>
-            <p>
-              Experimental content creation feature that allows users to add to
-              an existing story over the course of a day without spamming their
-              friends.
-            </p>
-            <ul class="d-flex space-x-1 list-tags list-style-n no-pad">
-              <li>html</li>
-              <li>css</li>
-              <li>javascript</li>
-            </ul>
-            <button class="btn-action mt-40" type="button">See project</button>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="card grid">
-          <div>
-            <img
-              src="./images/project2.png"
-              class="image-auto-h"
-              alt="Multi-Post Stories"
-            />
-          </div>
-          <div>
-            <h2 class="m0 font-40 h-0 f-color">Multi-Post Stories</h2>
-            <ul class="d-flex space-x-24 p-highlight mb-32">
-              <li class="font-13">Facebook</li>
-              <li>Full Stack</li>
-              <li>2015</li>
-            </ul>
-            <p>
-              Experimental content creation feature that allows users to add to
-              an existing story over the course of a day without spamming their
-              friends.
-            </p>
-            <ul class="d-flex space-x-1 list-tags list-style-n no-pad">
-              <li>html</li>
-              <li>css</li>
-              <li>javascript</li>
-            </ul>
-            <button class="btn-action mt-40" type="button">See project</button>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="card grid">
-          <div class="">
-            <img
-              src="./images/project3.png"
-              class="image-auto-h"
-              alt="Coffee Shop"
-            />
-          </div>
-          <div>
-            <h2 class="m0 font-40 h-0 f-color">Coffee Shop</h2>
-            <ul class="d-flex space-x-24 p-highlight mb-32">
-              <li class="font-13">Facebook</li>
-              <li>Full Stack</li>
-              <li>2015</li>
-            </ul>
-            <p>
-              Experimental content creation feature that allows users to add to
-              an existing story over the course of a day without spamming their
-              friends.
-            </p>
-            <ul class="d-flex space-x-1 list-tags list-style-n no-pad">
-              <li>html</li>
-              <li>css</li>
-              <li>javascript</li>
-            </ul>
-            <button class="btn-action mt-40" type="button">See project</button>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="card grid">
-          <div>
-            <img
-              src="./images/project4.png"
-              class="image-auto-h"
-              alt="Tax Calculator"
-            />
-          </div>
-          <div>
-            <h2 class="m0 font-40 h-0 f-color">Tax Calculator</h2>
-            <ul class="d-flex space-x-24 p-highlight mb-32">
-              <li class="font-13">Facebook</li>
-              <li>Full Stack</li>
-              <li>2015</li>
-            </ul>
-            <p>
-              Experimental content creation feature that allows users to add to
-              an existing story over the course of a day without spamming their
-              friends.
-            </p>
-            <ul class="d-flex space-x-1 list-style-n list-tags no-pad">
-              <li>html</li>
-              <li>css</li>
-              <li>javascript</li>
-            </ul>
-            <button class="btn-action mt-40" type="button">See project</button>
-          </div>
-        </div>
-      </section>
+    <section
+      id="portfolio"
+      class="d-flex flex-column space-y-3 my-88 mx-24">
     </section>
     <!-- end of projects section -->
 
@@ -305,7 +264,7 @@
             <div class="tech d-flex justify-between align-item-center">
               <h4>Frameworks</h4>
               <button type="button">
-                <i class="fa fa-angle-right forward" aria-hidden="true"></i>54
+                <i class="fa fa-angle-right forward" aria-hidden="true"></i>
               </button>
             </div>
             <div class="tech d-flex justify-between align-item-center">

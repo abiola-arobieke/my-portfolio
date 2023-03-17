@@ -34,12 +34,13 @@ body {
   border-radius: 16px;
   height: auto;
   width: 85%;
+  overflow-y: auto;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
 
 .pill-modal {
-  padding: 12px 14px;
+  padding: 12px 0;
   border-radius: 8px;
   font-size: 15px;
   color: #396df2;
@@ -88,7 +89,11 @@ body {
 .pill-icon {
   max-width: 20px;
   height: 19px;
-  margin-left: 13px;
+  margin-left: 5%;
+}
+
+hr {
+  border: 1px solid #ebecf0;
 }
 
 .text-white {
@@ -607,6 +612,10 @@ textarea {
   margin-top: 96px;
 }
 
+.mt-20 {
+  margin-top: 20px;
+}
+
 .font-13 {
   font-size: 13px;
 }
@@ -748,6 +757,10 @@ textarea {
 .my-88 {
   margin-top: 88px;
   margin-bottom: 88px;
+}
+
+.flex-grw-bas-sh {
+  flex: 1;
 }
 
 /* media query (desktop screens) */
@@ -998,11 +1011,11 @@ textarea {
   }
 
   .labels {
-    width: 80%;
+    width: 85%;
   }
 
   .pill-modal {
-    padding: 8px 25px;
+    padding: 8px 0;
     font-size: 15px;
   }
 

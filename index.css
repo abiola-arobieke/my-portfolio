@@ -86,6 +86,18 @@ body {
   cursor: pointer;
 }
 
+.success-msg {
+  position: fixed;
+  display: none;
+  top: 55%;
+  left: 50%;
+  border-radius: 16px;
+  overflow-y: auto;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 .pill-icon {
   max-width: 20px;
   height: 19px;
@@ -776,6 +788,10 @@ textarea {
   padding: 2px 4%;
   color: #c4302f;
   background-color: #f7e7ed;
+}
+
+.contact-btn:hover {
+  border: 1px solid #fff;
 }
 
 /* media query (desktop screens) */

@@ -113,7 +113,7 @@ on your web browser.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Preserve data in the browser**
+- [ ] **Fetch projects from the API**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

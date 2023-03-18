@@ -66,6 +66,7 @@ const email = document.querySelector('#mail');
 const alertMsg = document.querySelector('.alert-info');
 const form = document.querySelector('#form');
 const page = document.getElementsByTagName('body')[0];
+const successMsg = document.querySelector('.success-msg');
 
 // Event listener
 
@@ -172,13 +173,61 @@ for (let i = 0; i < actionBtn.length; i += 1) {
 // Email validation
 
 form.addEventListener('submit', (event) => {
+  event.preventDefault();
   if (email.value !== email.value.toLowerCase()) {
     alertMsg.style.display = 'block';
-    event.preventDefault();
+  } else {
+    form.submit();
+    localStorage.removeItem('user');
+    form.reset();
+    successMsg.style.display = 'block';
   }
 });
 
 // Remove alert
 page.addEventListener('click', () => {
   alertMsg.style.display = 'none';
+  successMsg.style.display = 'none';
+});
+
+const username = document.querySelector('#user');
+const message = document.querySelector('#msg');
+const storedUserData = JSON.parse(localStorage.getItem('user'));
+const userData = {};
+
+if (storedUserData) {
+  if (storedUserData.name !== undefined) {
+    userData.name = storedUserData.name;
+  }
+  if (storedUserData.email !== undefined) {
+    userData.email = storedUserData.email;
+  }
+  if (storedUserData.message !== undefined) {
+    userData.message = storedUserData.message;
+  }
+}
+
+if (userData.name && storedUserData.name !== undefined) {
+  username.value = userData.name;
+}
+if (userData.email && storedUserData.email !== undefined) {
+  email.value = userData.email;
+}
+if (userData.message && storedUserData.message !== undefined) {
+  message.value = userData.message;
+}
+
+username.addEventListener('input', () => {
+  userData.name = username.value;
+  localStorage.setItem('user', JSON.stringify(userData));
+});
+
+email.addEventListener('input', () => {
+  userData.email = email.value;
+  localStorage.setItem('user', JSON.stringify(userData));
+});
+
+message.addEventListener('input', () => {
+  userData.message = message.value;
+  localStorage.setItem('user', JSON.stringify(userData));
 });

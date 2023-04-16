@@ -6,7 +6,7 @@ const projects = [
     title: 'Cubana 2023',
     data: ['Musical Concert', 'Frontend', 2023],
     description:
-      "Cubaba 2023 is a live musical concert that will take place at the National Stadium, Surulere. The concert is going to feature popular artist like Burna Boy, P Square, Adekunle Gold, Asake, Wizkid, Olamide, Ruger, Naira Marley, Buju and lots more.",
+      'Cubaba 2023 is a live musical concert that will take place at the National Stadium, Surulere. The concert is going to feature popular artist like Burna Boy, P Square, Adekunle Gold, Asake, Wizkid, Olamide, Ruger, Naira Marley, Buju and lots more.',
     stack: ['html', 'css', 'Javascript'],
     imageUrl: './images/music-concert.png',
   },
@@ -15,7 +15,7 @@ const projects = [
     title: 'Awesome Books',
     data: ['Book Shelf', 'Frontend', 2023],
     description:
-      "Awesome books is book shelf built with wire-frame design. The site is built with HTML, CSS and JavaScript. Book author and title can be added to the website.",
+      'Awesome books is book shelf built with wire-frame design. The site is built with HTML, CSS and JavaScript. Book author and title can be added to the website.',
     stack: ['html', 'css', 'Javascript'],
     imageUrl: './images/awesome-books.png',
   },
@@ -24,7 +24,7 @@ const projects = [
     title: 'To do list',
     data: ['Task Reminder', 'Fronted', 2023],
     description:
-      "The app can be used to store the task to be be fulfilled. You can add and delete a task, mark completed task, and also clear all checked task. The task are save in the local storage, so you can retrieve all the save task upon loading the page",
+      'The app can be used to store the task to be be fulfilled. You can add and delete a task, mark completed task, and also clear all checked task. The task are save in the local storage, so you can retrieve all the save task upon loading the page',
     stack: ['html', 'css', 'Javascript'],
     imageUrl: './images/todo.png',
   },

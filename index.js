@@ -3,30 +3,30 @@
 const projects = [
   {
     id: 1,
-    title: 'Tonic',
-    data: ['Canopy', 'Dev-Ops', 2015],
+    title: 'Cubana 2023',
+    data: ['Musical Concert', 'Frontend', 2023],
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    stack: ['html', 'css', 'Javascript', 'ruby'],
-    imageUrl: './images/project1.png',
+      'Cubaba 2023 is a live musical concert that will take place at the National Stadium, Surulere. The concert is going to feature popular artist like Burna Boy, P Square, Adekunle Gold, Asake, Wizkid, Olamide, Ruger, Naira Marley, Buju and lots more.',
+    stack: ['html', 'css', 'Javascript'],
+    imageUrl: './images/music-concert.png',
   },
   {
     id: 2,
-    title: 'Multi-Post Stories',
-    data: ['Facebook', 'Back-End', 2017],
+    title: 'Awesome Books',
+    data: ['Book Shelf', 'Frontend', 2023],
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    stack: ['html', 'css', 'Javascript', 'React'],
-    imageUrl: './images/project2.png',
+      'Awesome books is book shelf built with wire-frame design. The site is built with HTML, CSS and JavaScript. Book author and title can be added to the website.',
+    stack: ['html', 'css', 'Javascript'],
+    imageUrl: './images/awesome-books.png',
   },
   {
     id: 3,
-    title: 'Coffee Shop',
-    data: ['Spotify', 'Full-stack', 2022],
+    title: 'To do list',
+    data: ['Task Reminder', 'Fronted', 2023],
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-    stack: ['html', 'css', 'Javascript', 'Python', 'Django'],
-    imageUrl: './images/project3.png',
+      'The app can be used to store the task to be be fulfilled. You can add and delete a task, mark completed task, and also clear all checked task. The task are save in the local storage, so you can retrieve all the save task upon loading the page',
+    stack: ['html', 'css', 'Javascript'],
+    imageUrl: './images/todo.png',
   },
   {
     id: 4,
@@ -62,6 +62,11 @@ const description = document.querySelector('#description');
 const pills = document.querySelector('.labels');
 const imageUrl = document.querySelector('.modal-img');
 const portfolio = document.querySelector('#portfolio');
+const email = document.querySelector('#mail');
+const alertMsg = document.querySelector('.alert-info');
+const form = document.querySelector('#form');
+const page = document.getElementsByTagName('body')[0];
+const successMsg = document.querySelector('.success-msg');
 
 // Event listener
 
@@ -164,3 +169,65 @@ for (let i = 0; i < actionBtn.length; i += 1) {
     modal.style.display = 'block';
   });
 }
+
+// Email validation
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (email.value !== email.value.toLowerCase()) {
+    alertMsg.style.display = 'block';
+  } else {
+    form.submit();
+    localStorage.removeItem('user');
+    form.reset();
+    successMsg.style.display = 'block';
+  }
+});
+
+// Remove alert
+page.addEventListener('click', () => {
+  alertMsg.style.display = 'none';
+  successMsg.style.display = 'none';
+});
+
+const username = document.querySelector('#user');
+const message = document.querySelector('#msg');
+const storedUserData = JSON.parse(localStorage.getItem('user'));
+const userData = {};
+
+if (storedUserData) {
+  if (storedUserData.name !== undefined) {
+    userData.name = storedUserData.name;
+  }
+  if (storedUserData.email !== undefined) {
+    userData.email = storedUserData.email;
+  }
+  if (storedUserData.message !== undefined) {
+    userData.message = storedUserData.message;
+  }
+}
+
+if (userData.name && storedUserData.name !== undefined) {
+  username.value = userData.name;
+}
+if (userData.email && storedUserData.email !== undefined) {
+  email.value = userData.email;
+}
+if (userData.message && storedUserData.message !== undefined) {
+  message.value = userData.message;
+}
+
+username.addEventListener('input', () => {
+  userData.name = username.value;
+  localStorage.setItem('user', JSON.stringify(userData));
+});
+
+email.addEventListener('input', () => {
+  userData.email = email.value;
+  localStorage.setItem('user', JSON.stringify(userData));
+});
+
+message.addEventListener('input', () => {
+  userData.message = message.value;
+  localStorage.setItem('user', JSON.stringify(userData));
+});

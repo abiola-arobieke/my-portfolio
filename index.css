@@ -86,6 +86,18 @@ body {
   cursor: pointer;
 }
 
+.success-msg {
+  position: fixed;
+  display: none;
+  top: 55%;
+  left: 50%;
+  border-radius: 16px;
+  overflow-y: auto;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 .pill-icon {
   max-width: 20px;
   height: 19px;
@@ -475,7 +487,7 @@ textarea {
 }
 
 .contact-btn {
-  margin-top: 20px;
+  flex-shrink: 0;
 }
 
 #message {
@@ -495,6 +507,7 @@ textarea {
 }
 
 /* flex */
+
 .d-flex {
   display: flex;
 }
@@ -557,6 +570,8 @@ textarea {
 
 .btn-wrapper {
   text-align: left;
+  padding-top: 20px;
+  align-items: start;
 }
 
 .font-40 {
@@ -763,6 +778,22 @@ textarea {
   flex: 1;
 }
 
+.alert-info {
+  display: none;
+  font-size: 13px;
+  height: auto;
+  min-width: 100px;
+  border-radius: 8px;
+  border: 1px solid #c4302f;
+  padding: 2px 4%;
+  color: #c4302f;
+  background-color: #f7e7ed;
+}
+
+.contact-btn:hover {
+  border: 1px solid #fff;
+}
+
 /* media query (desktop screens) */
 
 @media only screen and (min-width: 768px) {
@@ -933,11 +964,12 @@ textarea {
   }
 
   .contact-btn {
-    margin-top: 27px;
+    margin-top: 0;
   }
 
   .btn-wrapper {
     text-align: center;
+    padding-top: 27px;
   }
 
   .pb-100 {
@@ -1025,6 +1057,10 @@ textarea {
     overflow: hidden;
     margin: auto;
     align-items: center;
+  }
+
+  .alert-info {
+    font-size: 14px;
   }
 }
 

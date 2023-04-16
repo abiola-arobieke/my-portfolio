@@ -3,30 +3,30 @@
 const projects = [
   {
     id: 1,
-    title: 'Tonic',
-    data: ['Canopy', 'Dev-Ops', 2015],
+    title: 'Cubana 2023',
+    data: ['Musical Concert', 'Frontend', 2023],
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    stack: ['html', 'css', 'Javascript', 'ruby'],
-    imageUrl: './images/project1.png',
+      "Cubaba 2023 is a live musical concert that will take place at the National Stadium, Surulere. The concert is going to feature popular artist like Burna Boy, P Square, Adekunle Gold, Asake, Wizkid, Olamide, Ruger, Naira Marley, Buju and lots more.",
+    stack: ['html', 'css', 'Javascript'],
+    imageUrl: './images/music-concert.png',
   },
   {
     id: 2,
-    title: 'Multi-Post Stories',
-    data: ['Facebook', 'Back-End', 2017],
+    title: 'Awesome Books',
+    data: ['Book Shelf', 'Frontend', 2023],
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    stack: ['html', 'css', 'Javascript', 'React'],
-    imageUrl: './images/project2.png',
+      "Awesome books is book shelf built with wire-frame design. The site is built with HTML, CSS and JavaScript. Book author and title can be added to the website.",
+    stack: ['html', 'css', 'Javascript'],
+    imageUrl: './images/awesome-books.png',
   },
   {
     id: 3,
-    title: 'Coffee Shop',
-    data: ['Spotify', 'Full-stack', 2022],
+    title: 'To do list',
+    data: ['Task Reminder', 'Fronted', 2023],
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-    stack: ['html', 'css', 'Javascript', 'Python', 'Django'],
-    imageUrl: './images/project3.png',
+      "The app can be used to store the task to be be fulfilled. You can add and delete a task, mark completed task, and also clear all checked task. The task are save in the local storage, so you can retrieve all the save task upon loading the page",
+    stack: ['html', 'css', 'Javascript'],
+    imageUrl: './images/todo.png',
   },
   {
     id: 4,

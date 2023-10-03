@@ -3,48 +3,113 @@
 const projects = [
   {
     id: 1,
-    title: 'Tonic',
-    data: ['Canopy', 'Dev-Ops', 2015],
+    title: 'Fast-lane Racer',
+    data: ['FullStack', 'Ruby on Rails', 2023],
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    stack: ['html', 'css', 'Javascript', 'ruby'],
-    imageUrl: './images/project1.png',
+      "A music-concert app showing a musical event that will take place in Lagos, Nigeria. Data were fetch dynamically with Javascript in this project. Built with Javascript, HTML, and CSS",
+    stack: ['Ruby on Rails', 'React', 'Redux', 'Redux-Thunk'],
+    imageUrl: './images/fast-lane.png',
+    live: 'https://shiny-longma-bba6fb.netlify.app/',
+    github: 'https://github.com/muneeb3123/Fast-Lane-Racers-front-end'
   },
   {
     id: 2,
-    title: 'Multi-Post Stories',
-    data: ['Facebook', 'Back-End', 2017],
+    title: 'Book Store',
+    data: ['Frontend', 'React', 2023],
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    stack: ['html', 'css', 'Javascript', 'React'],
-    imageUrl: './images/project2.png',
+      'An e-book store where you can add and remove a book. The app  will display your reading progress and the current page you are reading',
+    stack: ['React', 'Redux', 'Redux-Thunk'],
+    imageUrl: './images/book-store.png',
+    live: 'https://book-store-y623.onrender.com/',
+    github: 'https://github.com/abiola-arobieke/book-store'
   },
   {
     id: 3,
-    title: 'Coffee Shop',
-    data: ['Spotify', 'Full-stack', 2022],
+    title: 'Cubana Musical Concert',
+    data: ['FrontEnd', 'VanillaJS', 2023],
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-    stack: ['html', 'css', 'Javascript', 'Python', 'Django'],
-    imageUrl: './images/project3.png',
+      "A music-concert app showing a musical event that will take place in Lagos, Nigeria. Data were fetch dynamically with Javascript in this project. Built with Javascript, HTML, and CSS",
+    stack: ['HTML', 'CSS', 'JavaScript'],
+    imageUrl: './images/cubana.png',
+    live: 'https://abiola-arobieke.github.io/music-concert/',
+    github: 'https://github.com/abiola-arobieke/music-concert'
   },
   {
     id: 4,
-    title: 'Dance Class',
-    data: ['Ebay', 'Backend', 2015],
+    title: 'FX-Today',
+    data: ['Frontend', 'React', 2023],
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-    stack: ['html', 'css', 'Javascript', 'Express'],
-    imageUrl: './images/project4.png',
+      'A foreign exchange app for mobile screen that can be used to compare the daily exchange rate. Rate of all currencies can be compared with each other. The landing page shows the rate exchange of 1 USD to every other currency.  You can change the 1 USD to your desired amount and compared the rate. The search bar on top of the page can be used to search for a currency. And if you need to select a currency other than USD, all you need to do is scroll down or search for the currency and click on it, and compared the rate of such currency to other currency',
+    stack: ['React', 'Redux', 'Redux-Thunk'],
+    imageUrl: './images/fx-today.png',
+    live: 'https://fx-today.onrender.com/',
+    github: 'https://github.com/abiola-arobieke/fx-today'
   },
   {
     id: 5,
-    title: 'Tax Calculator',
-    data: ['Walmart', 'DevOps', 2010],
+    title: 'LeaderBoard',
+    data: ['Frontend', 'VanillaJS', 2023],
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    stack: ['html', 'css', 'Javascript'],
-    imageUrl: './images/project1.png',
+      "Leaderboard is an app that shows the names and scores in a game or competition. You add a new game or select from the saved games. Each game added or selected will be displayed on the navigation bar. You add a name and score to a game selected using the form provided on the landing page.",
+    stack: ['JavaScript', 'Webpack', 'Babel'],
+    imageUrl: './images/leaderboard.png',
+    live: 'https://abiola-arobieke.github.io/leaderboard/',
+    github: 'https://github.com/abiola-arobieke/leaderboard'
+  },
+  {
+    id: 6,
+    title: 'Mama Put',
+    data: ['Frontend', 'VanillaJS', 2023],
+    description:
+      "MamaPut is a recipe app that displays a list of recipe. You can also view the ingredients for each recipe  and the amount of time it will require to cook each me. You can view the number of likes and comments for each recipe",
+    stack: ['JavaScript', 'Webpack', 'Babel'],
+    imageUrl: './images/mamaput.png',
+    live: 'https://abiola-arobieke.github.io/js-capstone-project/',
+    github: 'https://github.com/abiola-arobieke/js-capstone-project'
+  },
+  {
+    id: 7,
+    title: 'Math-Magician',
+    data: ['Frontend', 'React', 2023],
+    description:
+      "A calculator app that can perform basic calculation. An API for getting quotes was added to the app.",
+    stack: ['React', 'HTML', 'CSS'],
+    imageUrl: './images/math-magician.png',
+    live: 'https://math-magician-007.netlify.app/',
+    github: 'https://github.com/abiola-arobieke/math-magician'
+  },
+  {
+    id: 8,
+    title: 'Budget-It',
+    data: ['FullStack', 'Ruby on Rails', 2023],
+    description:
+      "A calculator app that can perform basic calculation. An API for getting quotes was added to the app.",
+    stack: ['Ruby on Rails', 'HTML', 'CSS'],
+    imageUrl: './images/budget-it.png',
+    live: 'https://budget-it-bvk4.onrender.com/',
+    github: 'https://github.com/abiola-arobieke/budget-it'
+  },
+  {
+    id: 9,
+    title: 'Minimalist',
+    data: ['Frontend', 'VanillaJS', 2023],
+    description:
+      'A to-do app that can be used to plan or schedule a task. You can add a task, mark it when it is completed, and also delete a task. All added task are saved in the local storage. And on reload of the web browser, all saved tasked with be fetched and displayed on the app.',
+    stack: ['JavaScript', 'CSS', 'HTML'],
+    imageUrl: './images/todo.png',
+    live: 'https://abiola-arobieke.github.io/to-do-list/',
+    github: 'https://github.com/abiola-arobieke/to-do-list'
+  },
+  {
+    id: 10,
+    title: 'Space Travelers',
+    data: ['Frontend', 'React', 2023],
+    description:
+      'An e-book store where you can add and remove a book. The app  will display your reading progress and the current page you are reading',
+    stack: ['React', 'Redux', 'Redux-Thunk'],
+    imageUrl: './images/space-traveler.png',
+    live: 'juneth-space-traveller.netlify.app/',
+    github: 'https://github.com/abiola-arobieke/space-travelers'
   },
 ];
 
@@ -59,6 +124,8 @@ const closeModalBtn = document.querySelector('#close-modal');
 const modalTitle = document.getElementById('modal-title');
 const projectInfo = document.querySelector('#project-data');
 const description = document.querySelector('#description');
+const liveUrl = document.querySelector('#live-url');
+const githubUrl = document.querySelector('#github-url');
 const pills = document.querySelector('.labels');
 const imageUrl = document.querySelector('.modal-img');
 const portfolio = document.querySelector('#portfolio');
@@ -159,6 +226,8 @@ for (let i = 0; i < actionBtn.length; i += 1) {
       modalTitle.textContent = projects[i].title;
       description.textContent = projects[i].description;
       imageUrl.src = projects[i].imageUrl;
+      liveUrl.href = projects[i].live;
+      githubUrl.href = projects[i].github
       break;
     }
     modal.style.display = 'block';

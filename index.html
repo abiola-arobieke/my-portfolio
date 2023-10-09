@@ -91,8 +91,14 @@
       </div>
     </div>
 
+    <!-- alert -->
+    <div id="alert" class="alert">
+      <span id="cancel-btn" class="closebtn">&times;</span>
+      Message sent.
+    </div>
+
     <!-- header section -->
-    <section class="header-container">
+    <section class="nav-bar">
       <header>
         <div class="nav-wrapper">
           <nav class="d-flex justify-between flex-nowrap">
@@ -140,6 +146,8 @@
           </nav>
         </div>
       </header>
+    </section>
+    <section class="header-container">
       <section class="headline d-flex flex-column">
         <div class="title d-flex flex-column mt-100">
           <h1 class="m0 f-color">
@@ -189,6 +197,7 @@
         </div>
       </section>
     </section>
+
     <!-- end of header sections -->
 
     <!-- projects section -->
@@ -247,36 +256,102 @@
         <div class="skill-set">
           <div class="tech lang d-flex justify-between align-item-center">
             <h4>Languages</h4>
-            <button type="button">
+            <button id="language-btn" type="button">
               <i class="fa fa-angle-down downward" aria-hidden="true"></i>
             </button>
           </div>
-          <ul class="d-flex no-pad box">
-            <li class="d-flex align-item-center">
-              <img src="./images/ruby-icon.jpg" alt="ruby-logo" />
-              <span>Ruby</span>
-            </li>
-            <li class="d-flex align-item-center">
-              <img src="./images/python-logo.png" alt="python-logo" />
-              <span>Python</span>
-            </li>
-            <li class="d-flex align-item-center">
-              <img src="./images/js-logo.png" alt="js-logo" />
-              <span>JavaScript</span>
-            </li>
-          </ul>
+          <div id="languages" class="language">
+            <ul class="d-flex no-pad box">
+              <li class="d-flex align-item-center">
+                <img src="./images/ruby-icon.jpg" alt="ruby-logo" />
+                <span>Ruby</span>
+              </li>
+              <li class="d-flex align-item-center">
+                <img src="./images/python-logo.png" alt="python-logo" />
+                <span>Python</span>
+              </li>
+              <li class="d-flex align-item-center">
+                <img src="./images/js-logo.png" alt="js-logo" />
+                <span>JavaScript</span>
+              </li>
+            </ul>
+          </div>
           <div>
-            <div class="tech d-flex justify-between align-item-center">
-              <h4>Frameworks</h4>
-              <button type="button">
-                <i class="fa fa-angle-right forward" aria-hidden="true"></i>
-              </button>
+            <div>
+              <div class="tech d-flex justify-between align-item-center">
+                <h4>Frameworks</h4>
+                <button id="framework-btn" type="button">
+                  <i
+                    class="fa fa-angle-right forward rotateup"
+                    aria-hidden="true"
+                  ></i>
+                </button>
+              </div>
+              <div id="framework" class="no-display">
+                <ul
+                  class="d-flex flex-wrap space-right space-bottom o-list-tag list-style-n no-pad labels"
+                >
+                  <li class="d-flex">
+                    <img src="./images/dj.png" alt="django" />
+                    <span class="d-flex align-self-center">Django</span>
+                  </li>
+                  <li class="d-flex">
+                    <img src="./images/flask.png" alt="flask" />
+                    <span class="d-flex align-self-center">Flask</span>
+                  </li>
+                  <li class="d-flex">
+                    <img src="./images/rails.png" alt="rails" />
+                    <span class="d-flex align-self-center">Ruby on Rails</span>
+                  </li>
+                  <li class="d-flex">
+                    <img src="./images/react.png" alt="react" />
+                    <span class="d-flex align-self-center">React</span>
+                  </li>
+                  <li class="d-flex">
+                    <img src="./images/vue.png" alt="vue" />
+                    <span class="d-flex align-self-center">Vue</span>
+                  </li>
+                  <li class="d-flex">
+                    <img src="./images/redux.png" alt="redux" />
+                    <span class="d-flex align-self-center">Redux</span>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div class="tech d-flex justify-between align-item-center">
               <h4>Skills</h4>
-              <button type="button">
+              <button id="skills-btn" type="button">
                 <i class="fa fa-angle-right forward" aria-hidden="true"></i>
               </button>
+            </div>
+            <div id="skills" class="no-display">
+              <ul
+                class="d-flex flex-wrap space-right space-bottom o-list-tag list-style-n no-pad labels"
+              >
+                <li>Agile Methodologies</li>
+                <li>Data structures, and Algorithms</li>
+                <li>Effective Communication</li>
+                <li>Leadership</li>
+                <li>Github</li>
+                <li>Research</li>
+                <li>Teamwork</li>
+                <li>Adaptability and Flexibility</li>
+                <li>Time Management</li>
+                <li>Results-Oriented</li>
+                <li>Unit Testing</li>
+                <li>Git-Flow</li>
+                <li>Integrity</li>
+                <li>Conflict Resolution</li>
+                <li>Problem Solving</li>
+                <li>Work Ethic</li>
+                <li>Scrum</li>
+                <li>Cross-Cultural and Diversity</li>
+                <li>SQL</li>
+                <li>International</li>
+                <li>Remote</li>
+                <li>Self Direction</li>
+                <li>Drive</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -298,7 +373,7 @@
               </p>
             </div>
           </div>
-          <form action="https://formspree.io/f/mpzerqgg" method="POST">
+          <form id="contact-form" action="" method="POST">
             <div class="d-flex flex-column">
               <label for="user" class="">Name: </label>
               <input
@@ -306,7 +381,7 @@
                 id="user"
                 name="user_name"
                 type="text"
-                placeholder="Lionel Messi"
+                placeholder="Name"
                 maxlength="30"
                 required
               />
@@ -315,9 +390,9 @@
               <input
                 class="font-17"
                 id="mail"
-                name="email "
+                name="E-mail "
                 type="email"
-                placeholder="dev@worker.com"
+                placeholder="email"
                 required
               />
 
@@ -334,7 +409,11 @@
               ></textarea>
             </div>
             <div class="btn-wrappper">
-              <button class="contact-btn btn-action" type="submit">
+              <button
+                id="submit-btn"
+                class="contact-btn btn-action"
+                type="submit"
+              >
                 Get in touch
               </button>
             </div>

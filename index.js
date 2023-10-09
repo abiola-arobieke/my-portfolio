@@ -6,11 +6,11 @@ const projects = [
     title: 'Fast-lane Racer',
     data: ['FullStack', 'Ruby on Rails', 2023],
     description:
-      "A music-concert app showing a musical event that will take place in Lagos, Nigeria. Data were fetch dynamically with Javascript in this project. Built with Javascript, HTML, and CSS",
+      'A music-concert app showing a musical event that will take place in Lagos, Nigeria. Data were fetch dynamically with Javascript in this project. Built with Javascript, HTML, and CSS',
     stack: ['Ruby on Rails', 'React', 'Redux', 'Redux-Thunk'],
     imageUrl: './images/fast-lane.png',
     live: 'https://shiny-longma-bba6fb.netlify.app/',
-    github: 'https://github.com/muneeb3123/Fast-Lane-Racers-front-end'
+    github: 'https://github.com/muneeb3123/Fast-Lane-Racers-front-end',
   },
   {
     id: 2,
@@ -21,18 +21,18 @@ const projects = [
     stack: ['React', 'Redux', 'Redux-Thunk'],
     imageUrl: './images/book-store.png',
     live: 'https://book-store-y623.onrender.com/',
-    github: 'https://github.com/abiola-arobieke/book-store'
+    github: 'https://github.com/abiola-arobieke/book-store',
   },
   {
     id: 3,
     title: 'Cubana Musical Concert',
     data: ['FrontEnd', 'VanillaJS', 2023],
     description:
-      "A music-concert app showing a musical event that will take place in Lagos, Nigeria. Data were fetch dynamically with Javascript in this project. Built with Javascript, HTML, and CSS",
+      'A music-concert app showing a musical event that will take place in Lagos, Nigeria. Data were fetch dynamically with Javascript in this project. Built with Javascript, HTML, and CSS',
     stack: ['HTML', 'CSS', 'JavaScript'],
     imageUrl: './images/cubana.png',
     live: 'https://abiola-arobieke.github.io/music-concert/',
-    github: 'https://github.com/abiola-arobieke/music-concert'
+    github: 'https://github.com/abiola-arobieke/music-concert',
   },
   {
     id: 4,
@@ -43,51 +43,51 @@ const projects = [
     stack: ['React', 'Redux', 'Redux-Thunk'],
     imageUrl: './images/fx-today.png',
     live: 'https://fx-today.onrender.com/',
-    github: 'https://github.com/abiola-arobieke/fx-today'
+    github: 'https://github.com/abiola-arobieke/fx-today',
   },
   {
     id: 5,
     title: 'LeaderBoard',
     data: ['Frontend', 'VanillaJS', 2023],
     description:
-      "Leaderboard is an app that shows the names and scores in a game or competition. You add a new game or select from the saved games. Each game added or selected will be displayed on the navigation bar. You add a name and score to a game selected using the form provided on the landing page.",
+      'Leaderboard is an app that shows the names and scores in a game or competition. You add a new game or select from the saved games. Each game added or selected will be displayed on the navigation bar. You add a name and score to a game selected using the form provided on the landing page.',
     stack: ['JavaScript', 'Webpack', 'Babel'],
     imageUrl: './images/leaderboard.png',
     live: 'https://abiola-arobieke.github.io/leaderboard/',
-    github: 'https://github.com/abiola-arobieke/leaderboard'
+    github: 'https://github.com/abiola-arobieke/leaderboard',
   },
   {
     id: 6,
     title: 'Mama Put',
     data: ['Frontend', 'VanillaJS', 2023],
     description:
-      "MamaPut is a recipe app that displays a list of recipe. You can also view the ingredients for each recipe  and the amount of time it will require to cook each me. You can view the number of likes and comments for each recipe",
+      'MamaPut is a recipe app that displays a list of recipe. You can also view the ingredients for each recipe  and the amount of time it will require to cook each me. You can view the number of likes and comments for each recipe',
     stack: ['JavaScript', 'Webpack', 'Babel'],
     imageUrl: './images/mamaput.png',
     live: 'https://abiola-arobieke.github.io/js-capstone-project/',
-    github: 'https://github.com/abiola-arobieke/js-capstone-project'
+    github: 'https://github.com/abiola-arobieke/js-capstone-project',
   },
   {
     id: 7,
     title: 'Math-Magician',
     data: ['Frontend', 'React', 2023],
     description:
-      "A calculator app that can perform basic calculation. An API for getting quotes was added to the app.",
+      'A calculator app that can perform basic calculation. An API for getting quotes was added to the app.',
     stack: ['React', 'HTML', 'CSS'],
     imageUrl: './images/math-magician.png',
     live: 'https://math-magician-007.netlify.app/',
-    github: 'https://github.com/abiola-arobieke/math-magician'
+    github: 'https://github.com/abiola-arobieke/math-magician',
   },
   {
     id: 8,
     title: 'Budget-It',
     data: ['FullStack', 'Ruby on Rails', 2023],
     description:
-      "A calculator app that can perform basic calculation. An API for getting quotes was added to the app.",
+      'A calculator app that can perform basic calculation. An API for getting quotes was added to the app.',
     stack: ['Ruby on Rails', 'HTML', 'CSS'],
     imageUrl: './images/budget-it.png',
     live: 'https://budget-it-bvk4.onrender.com/',
-    github: 'https://github.com/abiola-arobieke/budget-it'
+    github: 'https://github.com/abiola-arobieke/budget-it',
   },
   {
     id: 9,
@@ -98,7 +98,7 @@ const projects = [
     stack: ['JavaScript', 'CSS', 'HTML'],
     imageUrl: './images/todo.png',
     live: 'https://abiola-arobieke.github.io/to-do-list/',
-    github: 'https://github.com/abiola-arobieke/to-do-list'
+    github: 'https://github.com/abiola-arobieke/to-do-list',
   },
   {
     id: 10,
@@ -109,12 +109,11 @@ const projects = [
     stack: ['React', 'Redux', 'Redux-Thunk'],
     imageUrl: './images/space-traveler.png',
     live: 'juneth-space-traveller.netlify.app/',
-    github: 'https://github.com/abiola-arobieke/space-travelers'
+    github: 'https://github.com/abiola-arobieke/space-travelers',
   },
 ];
 
 // Variable used to get html element/s
-
 const menuIcon = document.querySelector('#menu-btn');
 const closeBtn = document.querySelector('#close-btn');
 const overlay = document.querySelector('#overlay');
@@ -129,8 +128,109 @@ const githubUrl = document.querySelector('#github-url');
 const pills = document.querySelector('.labels');
 const imageUrl = document.querySelector('.modal-img');
 const portfolio = document.querySelector('#portfolio');
+const contactForm = document.querySelector('#contact-form');
+const cancelBtn = document.querySelector('#cancel-btn');
+const alert = document.querySelector('#alert');
+const frameworkBtn = document.querySelector('#framework-btn');
+const skillsBtn = document.querySelector('#skills-btn');
+const languageBtn = document.querySelector('#language-btn');
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  const url = 'https://formspree.io/f/mpzerqgg';
+  const name = document.querySelector('#user');
+  const email = document.querySelector('#mail');
+  const message = document.querySelector('#msg');
+
+  const data = {
+    name: name.value,
+    email: email.value,
+    message: message.value,
+  };
+  try {
+    const response = await fetch(url, {
+      method: 'post',
+      headers: {
+        Accept: 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+    if (response.status === 200) {
+      alert.style.display = 'block';
+      setTimeout(() => {
+        alert.style.display = 'none';
+      }, 5000);
+    }
+    name.value = null;
+    email.value = null;
+    message.value = null;
+    return response.status;
+  } catch (error) {
+    return error;
+  }
+};
+
+const buttonDown = (e) => {
+  e.target.classList.remove('rotate-up');
+  e.target.classList.add('rotate-down');
+  e.target.style.transform = 'rotate(90deg)';
+};
+
+const buttonUp = (e) => {
+  e.target.classList.remove('rotate-down');
+  e.target.classList.add('rotate-up');
+  e.target.style.transform = 'rotate(0deg)';
+};
+
+const accLang = (e) => {
+  const languages = document.querySelector('#languages');
+  if (languages.className.includes('language')) {
+    languages.classList.remove('language');
+    languages.classList.add('no-display');
+    e.target.classList.remove('rotate-forward');
+    e.target.classList.add('rotate-back');
+    e.target.style.transform = 'rotate(-90deg)';
+  } else {
+    languages.classList.remove('no-display');
+    languages.classList.add('language');
+    e.target.classList.remove('rotate-back');
+    e.target.classList.add('rotate-forward');
+    e.target.style.transform = 'rotate(0deg)';
+  }
+};
+
+const accFramework = (e) => {
+  const framework = document.querySelector('#framework');
+  if (framework.className.includes('no-display')) {
+    buttonDown(e);
+    framework.classList.remove('no-display');
+    framework.classList.add('show');
+  } else {
+    buttonUp(e);
+    framework.classList.remove('show');
+    framework.classList.add('no-display');
+  }
+};
+
+const accSkills = (e) => {
+  const skills = document.querySelector('#skills');
+  if (skills.className.includes('no-display')) {
+    buttonDown(e);
+    skills.classList.remove('no-display');
+    skills.classList.add('show');
+  } else {
+    buttonUp(e);
+    skills.classList.remove('show');
+    skills.classList.add('no-display');
+  }
+};
 
 // Event listener
+frameworkBtn.addEventListener('click', accFramework);
+
+skillsBtn.addEventListener('click', accSkills);
+
+languageBtn.addEventListener('click', accLang);
 
 menuIcon.addEventListener('click', () => {
   overlay.style.display = 'block';
@@ -149,6 +249,12 @@ for (let i = 0; i < menuItems.length; i += 1) {
 closeModalBtn.addEventListener('click', () => {
   modal.style.display = 'none';
 });
+
+cancelBtn.addEventListener('click', () => {
+  alert.style.display = 'none';
+});
+
+contactForm.addEventListener('submit', handleSubmit);
 
 // Loop through dummy data to make web page page dynamic
 
@@ -227,7 +333,7 @@ for (let i = 0; i < actionBtn.length; i += 1) {
       description.textContent = projects[i].description;
       imageUrl.src = projects[i].imageUrl;
       liveUrl.href = projects[i].live;
-      githubUrl.href = projects[i].github
+      githubUrl.href = projects[i].github;
       break;
     }
     modal.style.display = 'block';

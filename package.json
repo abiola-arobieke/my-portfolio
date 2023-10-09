@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "<a name=\"readme-top\"></a>",
   "main": "index.js",
- 
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",

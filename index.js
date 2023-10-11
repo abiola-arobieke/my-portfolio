@@ -108,7 +108,7 @@ const projects = [
       'An e-book store where you can add and remove a book. The app  will display your reading progress and the current page you are reading',
     stack: ['React', 'Redux', 'Redux-Thunk'],
     imageUrl: './images/space-traveler.png',
-    live: 'juneth-space-traveller.netlify.app/',
+    live: 'https://juneth-space-traveller.netlify.app/',
     github: 'https://github.com/abiola-arobieke/space-travelers',
   },
 ];
@@ -171,15 +171,15 @@ const handleSubmit = async (e) => {
 };
 
 const buttonDown = (e) => {
-  e.target.classList.remove('rotate-up');
-  e.target.classList.add('rotate-down');
-  e.target.style.transform = 'rotate(90deg)';
+  e.target.classList.remove('rotate-back');
+  e.target.classList.add('rotate-forward');
+  e.target.style.transform = 'rotate(0deg)';
 };
 
 const buttonUp = (e) => {
-  e.target.classList.remove('rotate-down');
-  e.target.classList.add('rotate-up');
-  e.target.style.transform = 'rotate(0deg)';
+  e.target.classList.remove('rotate-forward');
+  e.target.classList.add('rotate-back');
+  e.target.style.transform = 'rotate(180deg)';
 };
 
 const accLang = (e) => {
@@ -187,28 +187,24 @@ const accLang = (e) => {
   if (languages.className.includes('language')) {
     languages.classList.remove('language');
     languages.classList.add('no-display');
-    e.target.classList.remove('rotate-forward');
-    e.target.classList.add('rotate-back');
-    e.target.style.transform = 'rotate(-90deg)';
+    buttonUp(e);
   } else {
     languages.classList.remove('no-display');
     languages.classList.add('language');
-    e.target.classList.remove('rotate-back');
-    e.target.classList.add('rotate-forward');
-    e.target.style.transform = 'rotate(0deg)';
+    buttonDown(e);
   }
 };
 
 const accFramework = (e) => {
   const framework = document.querySelector('#framework');
-  if (framework.className.includes('no-display')) {
-    buttonDown(e);
-    framework.classList.remove('no-display');
-    framework.classList.add('show');
-  } else {
+  if (framework.className.includes('show')) {
     buttonUp(e);
     framework.classList.remove('show');
     framework.classList.add('no-display');
+  } else {
+    buttonDown(e);
+    framework.classList.remove('no-display');
+    framework.classList.add('show');
   }
 };
 

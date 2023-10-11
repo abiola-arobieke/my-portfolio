@@ -93,7 +93,7 @@ body {
 }
 
 .show {
-  display: block;
+  display: flex;
   animation-duration: 2s;
   animation-name: slowslidedown;
 }
@@ -412,7 +412,6 @@ a {
   height: 28px;
   padding: 20px 0;
   margin-left: 12px;
-  border-bottom: solid 1px #acb7c3;
 }
 
 .box {
@@ -902,12 +901,12 @@ textarea {
   }
 
   .rotate-down {
-    animation-duration: 0.3s;
+    animation-duration: 5s;
     animation-name: rotatedown;
   }
 
   .rotate-up {
-    animation-duration: 0.3s;
+    animation-duration: 5s;
     animation-name: rotateup;
   }
 
@@ -923,37 +922,29 @@ textarea {
 
   @keyframes slowslidedown {
     from {
-      height: 0;
       opacity: 0;
     }
 
     to {
-      height: 100%;
       opacity: 100%;
     }
   }
 
   @keyframes rotatedown {
     from {
+      height: 0;
+      background-color: red;
+      opacity: 0;
       -webkit-transform: rotate(0deg);
       transform: rotate(0deg);
     }
 
     to {
+      height: 100%;
+      background-color: blue;
+      opacity: 100%;
       -webkit-transform: rotate(90deg);
       transform: rotate(90deg);
-    }
-  }
-
-  @keyframes rotateup {
-    from {
-      -webkit-transform: rotate(90deg);
-      transform: rotate(90deg);
-    }
-
-    to {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
     }
   }
 
@@ -964,15 +955,15 @@ textarea {
     }
 
     to {
-      -webkit-transform: rotate(-90deg);
-      transform: rotate(-90deg);
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
     }
   }
 
   @keyframes rotateforward {
     from {
-      -webkit-transform: rotate(-90deg);
-      transform: rotate(-90deg);
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
     }
 
     to {
@@ -1013,6 +1004,8 @@ textarea {
   .language {
     display: flex;
     height: auto;
+    animation-duration: 2s;
+    animation-name: slowslidedown;
   }
 
   .language > ul > li {
